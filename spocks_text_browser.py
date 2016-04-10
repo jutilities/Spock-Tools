@@ -106,12 +106,12 @@ class spocks_text_navigator(bpy.types.Panel):
                     results+=1
                     if i.name == text.name:
                         #row[a].prop(context.scene, "spock_fname",icon="SPACE2")
-                        row[a].operator("object.spocks_file_operator",i.name,icon="SPACE2").action="l "+i.name
-                        row[a].operator("object.spocks_file_operator","",icon="X_VEC").action="ask"
+                        row[a].operator("object.spocks_file_operator",i.name,icon="SPACE2",emboss=False).action="l "+i.name
+                        row[a].operator("object.spocks_file_operator","",icon="X_VEC",emboss=False).action="ask"
                     
                         pass
                     else:
-                        row[a].operator("object.spocks_file_operator",i.name,icon="SPACE3").action="l "+i.name
+                        row[a].operator("object.spocks_file_operator",i.name,icon="SPACE3",emboss=False).action="l "+i.name
                     
                     
                     
